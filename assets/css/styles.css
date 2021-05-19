@@ -12,15 +12,7 @@ body {
   justify-content: center;
 }
 
-.position-absolute { position: absolute; }
-
-.z10 { z-index: 10; }
-
-.img-fluid {
-  width: 100%;
-}
-
-.ad_container {
+.container {
   width: 500px;
   height: 500px;
   border: 1px solid black;
