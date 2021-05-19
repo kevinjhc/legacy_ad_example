@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #F7F0E3;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.position-absolute { position: absolute; }
+
+.z10 { z-index: 10; }
+
+.img-fluid {
+  width: 100%;
+}
+
+.ad_container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+#slide-first-element {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#slide-element-2,
+#slide-element-3 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+#slide-first-element {
+  animation: fade-1 10s infinite;
+  animation-delay: 1s;
+}
+#slide-element-2 {
+  animation: fade-2 10s infinite;
+  animation-delay: 1s;
+}
+#slide-element-3 {
+  animation: fade-3 10s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes fade-1 {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fade-2 {
+  0% { opacity: 0; }
+  33% { opacity: 1; }
+  66% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes fade-3 {
+  0% { opacity: 0; }
+  33% { opacity: 0; }
+  66% { opacity: 1; }
+  100% { opacity: 0; }
+}
